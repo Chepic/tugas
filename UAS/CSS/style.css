@@ -1,0 +1,202 @@
+test
+
+/*--General Code--*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+/*---------*/
+
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	padding:25px 0;
+}
+.navbar .logo{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 750;
+	letter-spacing: 2px;
+}
+.navbar ul.nav{
+	margin-right: 15%;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+.navbar ul.nav li a{
+	color: #fff;
+	font-size: 1em;
+	font-weight: 500;
+}
+.navbar ul li:hover::after{
+    width: 80%;
+}
+
+#WebCarousel{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	
+
+}
+
+#WebCarousel .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,5));
+	
+}
+
+
+#WebCarousel .carousel-inner:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,5));
+}
+
+
+
+
+#WebCarousel .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url('/image/header-slider/head.png');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	
+}
+#WebCarousel .carousel-inner .carousel-item:nth-child(2){
+	background: url('/image/header-slider/head2.png');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	
+}
+#WebCarousel .carousel-inner .carousel-item:nth-child(3){
+	background: url('/image/header-slider/head3.png');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	
+}
+
+#WebCarousel .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+#WebCarousel .carousel-inner .carousel-item h1{
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
+	
+}
+#WebCarousel .carousel-inner .carousel-item p{
+	height: auto;
+	color: rgb(255, 255, 255);
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+#WebCarousel .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	
+}
+#WebCarousel .carousel-inner .carousel-item h1{
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
+}
+#WebCarousel .carousel-inner .carousel-item p{
+	height: auto;
+	color: rgb(255, 255, 255);
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+#WebCarousel .carousel-inner .carousel-item a{
+	height: auto;
+	color: rgb(255, 255, 255);
+	width: relative;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-left: 46.6%;
+}
+
+.menu-button  {
+	padding: 8px 20px;
+	border-radius: 30px;
+	border: 2px solid white;
+	margin: 0 10px;
+	margin-top: 30px;
+	background-color: transparent;
+	color: #fff;
+	transition: 0.4s;
+}
+
+.menu-button:hover  {
+	background-color: white;
+	color:black;
+}
+
+.marquee-promo{
+	z-index: 2;
+	position: absolute;
+	visibility: show;
+	bottom: 50px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.marquee-promo h1{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 0;
+
+}
