@@ -22,7 +22,7 @@ test
 	text-transform: uppercase;
 	font-weight: 750;
 	letter-spacing: 2px;
-	margin-bottom: -100px;
+	padding-bottom: -130px;
 }
 .navbar ul.nav{
 	margin-right: 15%;
@@ -240,7 +240,7 @@ test
 .site-container{
 	padding-top: 50px;
 	background: linear-gradient( rgba(0,0,0,5), rgba(0,0,0,0));
-	margin: auto;
+
 	max-width: calc(100%-80px);
 	background-color: #141516;
 	text-align: center;
@@ -268,11 +268,11 @@ test
 	max-width: 100%;
 	height: auto;
 	border-radius: 20px 20px 0 0;
-
+	clip-path: polygon(0 0,100% 0,100% 85%, 0 100%);
 }
 
 .article-card {
-	background: #17181b;
+	background: linear-gradient( rgba(34,35,38,100), rgba(54,55,60,0.1));
 	border-radius: 20px;
 	transition: 0.3s;
 }
@@ -286,6 +286,17 @@ test
 	padding: 2rem;
 	color:white;
 }
+
+.article-content h3{
+	font-size: 20px;
+}
+
+.article-content p{
+	font-size: 14px;
+	padding-top: 10px;
+	align-content:center
+}
+
 .article-content .card-category{
 	display: block;
 	
@@ -308,69 +319,37 @@ test
 	color:black;
 }
 /*-----WHY US----*/
-.row{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-.why{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-    background-color: #F7F7F7;
 
-}
-.why h1{
-    font-size: 36px;
-    font-weight: 500;
-}
-
-.line{
-    margin-top: 30px;
-    flex-basis: 25%;
-    min-width: 200px;
-    margin-bottom: 50px;
-    text-align:center;
-    max-width:max-content;
-    align-content: center;
-    margin-right: 60px;
-    margin-left: 60px;
-}
-
-.line img{
-    align-self: center;
-    max-width: 150px;
-}
-
-.line h2{
-    font-weight: 300;
-    font-size: 36px;
-}
 /*---- Collection-----*/
 
 /*----FOOTER----*/
-.newsletter{padding:120px 0 75px;}
+.newsletter{
+	padding:120px 0 75px;
+	background-color: #141516;
+}
 
 .hm-footer-widget{margin-bottom: 30px;}
 .hm-foot-title h4 {
+	padding-left: 40px;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
+	color: #fff;
 }
-.hm-foot-menu ul li a {
-    color: #a09e9c;
+.hm-foot-menu ul a {
+	display:block;
+	justify-content: center;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     -webkit-transition: .3s; 
     -moz-transition:.3s; 
     -ms-transition:.3s; 
     -o-transition:.3s;
     transition: .3s;
 }
-.hm-foot-menu ul li a:hover{
-    color: #e99c2e;
+.hm-foot-menu ul a:hover{
     -webkit-transform:translateX(10px);
     -moz-transform:translateX(10px);
     -ms-transform:translateX(10px);
@@ -381,6 +360,7 @@ test
     font-size: 14px;
     text-transform: initial;
     margin-bottom: 25px;
+	color: #ffffff;
 }
 
 /*hm-foot-email*/
@@ -390,7 +370,7 @@ test
     display: block;
     padding:25px 15px;
     outline:0!important;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    box-shadow:0 5px 15px rgba(255, 255, 255, 0.2);
     border:0;
 }
 .foot-email-box input[type="text"]{
@@ -404,14 +384,14 @@ test
     width: 50px;
     height: 100%;
     background: transparent;
-    color: #e99c2e;
+    color: #141516;
     font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .foot-email-box .form-control:hover{
-    box-shadow:0 5px 15px rgba(0,0,0,.4);
+    box-shadow:0 5px 15px rgba(255, 255, 255, 0.4);
 }
 /*hm-foot-email*/
 
@@ -420,7 +400,7 @@ test
         11. Footer
 --------------------------------------*/
 .footer {
-    background: #f8f9fd;
+    background: #141516;
     display: flex;
     align-items: center;
     height: 154px;
@@ -439,7 +419,11 @@ test
     -o-transition:.3s;
     transition: .3s;
 }
-.footer-social i:hover{color: #e99c2e;}
+.footer-social i:hover{
+	color: #ffffff;
+	box-shadow:0 5px 15px rgba(255, 255, 255, 0.2);
+	box-shadow:0 -5px -15px rgba(255, 255, 255, 0.2);
+}
 
 /*===============================
     Scroll Top
