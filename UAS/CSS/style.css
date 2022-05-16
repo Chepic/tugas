@@ -213,21 +213,21 @@ z-index: 3;
 	position: relative;
 	height: 100%;
 	width:100%;
-	background: url('/image/header-slider/head.png');
+	background: url('/uas/image/header-slider/head.png');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: absolute;
 	
 }
 #WebCarousel .carousel-inner .carousel-item:nth-child(2){
-	background: url('/image/header-slider/head2.png');
+	background: url('/uas/image/header-slider/head2.png');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: absolute;
 	
 }
 #WebCarousel .carousel-inner .carousel-item:nth-child(3){
-	background: url('/image/header-slider/head3.png');
+	background: url('/uas/image/header-slider/head3.png');
 	background-size: 100% 100%;
 	background-position: center;
 	background-attachment: absolute;
@@ -463,6 +463,9 @@ z-index: 3;
 	color:black;
 }
 /*-----WHY US----*/
+.bst-slr{
+	background-color: #141516;
+}
 .h3{
 	font-size: 30px;
 	text-align: center;
@@ -481,10 +484,19 @@ z-index: 3;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	margin: 50px 0;
-	background-color: #141516;;
 }
 
+.bst-slr p {
+	
+	margin: 0;
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 30px;
+	color: #fff;
+	font-size: 36px;
+    font-weight: 500;
+	
+}
 .content{
 	width: 20%;
 	margin: 15px;
@@ -538,12 +550,12 @@ z-index: 3;
 	margin-top: 5px;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
-	background: yellowgreen;
+	background: #242424;
 
 }
 /*---- Collection-----*/
 .collection{
-	background-image: url(/image/Collection/banner-1.png);
+	background-image: url(/uas/image/Collection/banner-1.png);
 	height: 450px;
 	color: #fff;
 	padding-top: 150px;
@@ -586,34 +598,6 @@ padding-bottom: 50px;
 	color:black;
 }
 /*-----WHY US----*/
-.pdct{
-	background-color: #242424;
-}
-.container-pdct{
-}
-
-.card-pdct{
-	border: none;
-	outline: none;
-	background-color: white;
-	border-radius: 20px;
-	box-shadow: #181818;
-}
-
-.card-pdct:hover{
-	transform: translateY();
-	transition: transform .3s;
-
-}
-
-.text1{
-	font-size: 13px;
-	color: #cbcbcb;
-}
-
-.info{
-	line-height: 17px;
-}
 
  
 
